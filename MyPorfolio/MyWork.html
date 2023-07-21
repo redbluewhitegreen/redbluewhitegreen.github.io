@@ -1,137 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>My Work</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-</head>
-<body>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-  <header class="p-3 bg-dark text-white">
+  <head>
+    <meta charset="UTF-8">
+    <title>My Work</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+
+    <header class="p-3 bg-dark text-white">
+      <div class="container">
+        <nav class="navbar navbar-dark navbar-expand-md bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand h3">MY PORTFOLIO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#responsiveMenu"
+                    aria-controls="responsiveMenu" area-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="responsiveMenu">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Top</a></li>
+                <li class="nav-item"><a class="nav-link" href="MyWork.html">Works</a></li>
+                <li class="nav-item"><a class="nav-link" href="introduction.html">introduction</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="bg-secondary p-1 text-dark bg-opacity-25">
     <div class="container">
-    <h2>Works</h2>
-      <ul class="list-inline"> <!-nav varとかでリンク飛べるようにする>
-        <li class="list-inline-item">
-          <a href="index.html">Top</a>
-        </li>
-        <li class="list-inline-item">
-          <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="">
-            Works
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="MyWork.html">Programming Works</a></li>
-            <li><a class="dropdown-item" href="#">Hobby Works</a></li>
-          </ul>
-        </li>
-        <li class="list-inline-item">
-          <a href="introduction.html">Introduction</a>
-        </li>
-      </ul>
+      <div class="bg-white p-1 text-dark">
+        <h2 class="pt-3">Programming Works</h2>
+
+      <h3 class="pt-3">デジタルビー玉アート</h3>
+        <div class = row>
+          <div class = col-md-4 d-sm-12>
+            <img class="img-fluid" src = "bidamaArt.png">
+          </div>
+          <div class = col-md-8 d-sm-8>
+            <b>制作時期</b>
+            <p>2022年12月</p>
+            <b>制作期間</b>
+            <p>3週間</p>
+            <b>使用言語・道具</b>
+            <ul>
+              <li>Processing</li>
+              <li>Webカメラ</li>
+              <li>段ボール</li>
+              <li>箱</li>
+            </ul>
+            <b>対象ユーザー</b>
+            <p>子供</p>
+            <b>作品説明</b>
+            <p>子供の頃に遊んだ「ビー玉アート」を服や手を汚さずに作ることができないか考えて作成した作品です。</p>
+            <p>底に画用紙を敷いた箱の中に絵の具が着いたビー玉を転がし、画用紙に模様を着けていく遊びをビー玉アートと言います。私は子供の頃によくこれで遊んでいたのですが、服や手を絵の具で汚してしまうため、いつでもできる遊びではありませんでした。そこでデジタルなら絵の具で汚すことなく遊ぶことができると考え、作品を製作しました。</p>
+            <b>システム説明</b>
+            <p>Open CVを用いて箱の四角にあるマーカー検出を行い、カメラに対し斜めになっている箱を切り取り、長方形に補正します。ビー玉をマウスクリックで指定し、その色の位置を検出、画面に描写します。</p>
+
+          </div>
+        </div>
+        <h3 class="pt-3">気配の変化</h3>
+        <div class = row>
+          <div class = col-md-4 d-sm>
+            <img class="img-fluid" src = "kehai.jpeg">
+          </div>
+          <div class = col-md-8 d-sm>
+            <b>制作時期</b>
+            <p>2022年19月</p>
+            <b>制作期間</b>
+            <p>5ヶ月</p>
+            <b>使用言語・道具</b>
+            <ul>
+              <li>Arduino</li>
+              <li>サーボモーター</li>
+              <li>糸</li>
+              <li>キーボード</li>
+              <li>マウス</li>
+            </ul>
+            <b>作品説明</b>
+            <p>キーボードのキーキャップやマウスのクリックボタンが勝手に動くインスタレーション作品です。
+              「気配の変化についての提示」の研究のために3人で製作しました。
+              作品を見ずにマウスのクリック音やキーボードのタイピング音が聞こえていると
+              人の気配を感じることができます。しかし実際に自立して動くマウスとキーボードを見ると、
+              「なにかがいる」と感じ方が変わるのでは、と予測しそのことを示す作品を製作しました。</p>
+            <b>システム説明</b>
+            <p>キーボードやマウスを分解し、中にサーボモーターを取り付けています。キーキャップやマウスのボタン部分の裏側とモーターを糸で結び、サーボモーターを一定の角度に動かすことでキーやクリックボタンが下に引っ張られ、また戻すことにより押されて戻るように見えます。PCで押したキーによりマウスが動くのか、キーボードのいずれかのキーが動くのか操作しました。</p>
+
+          </div>
+        </div>
+        <h3 class="pt-3">トイレットペーパー残量確認装置</h3>
+        <div class = row>
+          <div class = col-md-4 d-sm>
+            <img class="img-fluid" src = "toiletZentai.jpg">
+          </div>
+          <div class = col-md-8 d-sm>
+            <b>制作時期</b>
+            <p>2023年5月</p>
+            <b>制作期間</b>
+            <p>1週間</p>
+            <b>使用言語・道具</b>
+            <ul>
+              <li>Arduino</li>
+              <li>距離センサー</li>
+              <li>ジャンプケーブル</li>
+              <li>ブザー</li>
+              <li>スイッチ</li>
+              <li>ブレッドボード</li>
+              <li>Wi-Fiモジュール</li>
+              <li>サーバー(今回インターンで用意されたサーバーを用いていて、構築はしていません)</li>
+            </ul>
+            <b>対象ユーザー</b>
+            <p>複数人で同居している人</p>
+            <b>作品説明</b>
+            <p>トイレットペーパーの残量を計測して通知するIoTシステムです。プログラミングインターンにて製作した作品。</p>
+            <p>トイレに入った時、ペーパーが無い！という現象は、その前に使った人が交換しておいたり予備を置いておいてくれないために起こる問題です。これを防止するためのIoT装置を考えました。  </p>
+            <b>システム説明</b>
+            <p>ホルダーの裏に距離センサーを装着し、芯棒までの距離を計測。一定より距離が大きい時はブラウザに「トイレットペーパーは足りています」と表示され、小さい時は
+              「トイレットペーパーは不足しています」と表示されます。不足している時はお知らせのブザーがなります。まだ微妙に残っているので交換はしないけれど予備を置いとくよ！
+              という場合は、ブザーをスイッチで止めることもできます。そもそも家に在庫が無かった！買わなきゃ！という方の忘れ防止のために、定刻(時間は何時でもいいのですが…、)に
+              メールでのお知らせ機能もあります</p>
+
+
+          </div>
+        </div>
     </div>
-  </header>
-<div class="bg-secondary p-1 text-dark bg-opacity-25">
-<div class="container">
-  <div class="bg-white p-1 text-dark">
-    <h2 class="pt-3">Programming Works</h2>
-
-  <h3 class="pt-3">デジタルビー玉アート</h3>
-    <div class = row>
-      <div class = col-md-4 d-sm-12>
-        <img class="img-fluid" src = "bidamaArt.png">
-      </div>
-      <div class = col-md-8 d-sm-8>
-        <b>制作時期</b>
-        <p>2022年12月</p>
-        <b>制作期間</b>
-        <p>3週間</p>
-        <b>使用言語・道具</b>
-        <ul>
-          <li>Processing</li>
-          <li>Webカメラ</li>
-          <li>段ボール</li>
-          <li>箱</li>
-        </ul>
-        <b>対象ユーザー</b>
-        <p>子供</p>
-        <b>作品説明</b>
-        <p>子供の頃に遊んだ「ビー玉アート」を服や手を汚さずに作ることができないか考えて作成した作品です。</p>
-        <p>底に画用紙を敷いた箱の中に絵の具が着いたビー玉を転がし、画用紙に模様を着けていく遊びをビー玉アートと言います。私は子供の頃によくこれで遊んでいたのですが、服や手を絵の具で汚してしまうため、いつでもできる遊びではありませんでした。そこでデジタルなら絵の具で汚すことなく遊ぶことができると考え、作品を製作しました。</p>
-        <b>システム説明</b>
-        <p>Open CVを用いて箱の四角にあるマーカー検出を行い、カメラに対し斜めになっている箱を切り取り、長方形に補正します。ビー玉をマウスクリックで指定し、その色の位置を検出、画面に描写します。</p>
-
-      </div>
     </div>
-    <h3 class="pt-3">気配の変化</h3>
-    <div class = row>
-      <div class = col-md-4 d-sm>
-        <img class="img-fluid" src = "kehai.jpeg">
-      </div>
-      <div class = col-md-8 d-sm>
-        <b>制作時期</b>
-        <p>2022年19月</p>
-        <b>制作期間</b>
-        <p>5ヶ月</p>
-        <b>使用言語・道具</b>
-        <ul>
-          <li>Arduino</li>
-          <li>サーボモーター</li>
-          <li>糸</li>
-          <li>キーボード</li>
-          <li>マウス</li>
-        </ul>
-        <b>作品説明</b>
-        <p>キーボードのキーキャップやマウスのクリックボタンが勝手に動くインスタレーション作品です。
-          「気配の変化についての提示」の研究のために3人で製作しました。
-          作品を見ずにマウスのクリック音やキーボードのタイピング音が聞こえていると
-          人の気配を感じることができます。しかし実際に自立して動くマウスとキーボードを見ると、
-          「なにかがいる」と感じ方が変わるのでは、と予測しそのことを示す作品を製作しました。</p>
-        <b>システム説明</b>
-        <p>キーボードやマウスを分解し、中にサーボモーターを取り付けています。キーキャップやマウスのボタン部分の裏側とモーターを糸で結び、サーボモーターを一定の角度に動かすことでキーやクリックボタンが下に引っ張られ、また戻すことにより押されて戻るように見えます。PCで押したキーによりマウスが動くのか、キーボードのいずれかのキーが動くのか操作しました。</p>
-
-      </div>
-    </div>
-    <h3 class="pt-3">トイレットペーパー残量確認装置</h3>
-    <div class = row>
-      <div class = col-md-4 d-sm>
-        <img class="img-fluid" src = "toiletZentai.jpg">
-      </div>
-      <div class = col-md-8 d-sm>
-        <b>制作時期</b>
-        <p>2023年5月</p>
-        <b>制作期間</b>
-        <p>1週間</p>
-        <b>使用言語・道具</b>
-        <ul>
-          <li>Arduino</li>
-          <li>距離センサー</li>
-          <li>ジャンプケーブル</li>
-          <li>ブザー</li>
-          <li>スイッチ</li>
-          <li>ブレッドボード</li>
-          <li>Wi-Fiモジュール</li>
-          <li>サーバー(今回インターンで用意されたサーバーを用いていて、構築はしていません)</li>
-        </ul>
-        <b>対象ユーザー</b>
-        <p>複数人で同居している人</p>
-        <b>作品説明</b>
-        <p>トイレットペーパーの残量を計測して通知するIoTシステムです。プログラミングインターンにて製作した作品。</p>
-        <p>トイレに入った時、ペーパーが無い！という現象は、その前に使った人が交換しておいたり予備を置いておいてくれないために起こる問題です。これを防止するためのIoT装置を考えました。  </p>
-        <b>システム説明</b>
-        <p>ホルダーの裏に距離センサーを装着し、芯棒までの距離を計測。一定より距離が大きい時はブラウザに「トイレットペーパーは足りています」と表示され、小さい時は
-          「トイレットペーパーは不足しています」と表示されます。不足している時はお知らせのブザーがなります。まだ微妙に残っているので交換はしないけれど予備を置いとくよ！
-          という場合は、ブザーをスイッチで止めることもできます。そもそも家に在庫が無かった！買わなきゃ！という方の忘れ防止のために、定刻(時間は何時でもいいのですが…、)に
-          メールでのお知らせ機能もあります</p>
 
 
-      </div>
-    </div>
-</div>
-</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-</body>
+  </body>
 </html>
